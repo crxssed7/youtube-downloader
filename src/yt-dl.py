@@ -34,6 +34,7 @@ def parse_args(video_url, type, final_path):
                     'preferredcodec': 'mp3',
                     'preferredquality': '192',
                 }],
+                'outtmpl': '/%(title)s.%(ext)s'
             }
 
         download_url(video_url = video_url, ydl_opts = ydl_opts)
@@ -46,7 +47,9 @@ def parse_args(video_url, type, final_path):
             }
         else:
             # Don't specify final path
-            ydl_opts = {}
+            ydl_opts = {
+                'outtmpl': '/%(title)s.%(ext)s'
+            }
 
         download_url(video_url = video_url, ydl_opts = ydl_opts)
 
