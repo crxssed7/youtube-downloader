@@ -83,4 +83,4 @@ if __name__ == '__main__':
         parse_args(video_url = video_url, type = type, final_path = '')
 
     else:
-        print('Incorrect args. The format must be: python yt-dl.py [video_url] [audio/video] [final_path]. Number of args given: ' + str(len(sys.argv)))
+        print('Incorrect args. The format must be: python yt-dl.py [video_url OR playlist_url] [audio/video] [final_path]. Number of args given: ' + str(len(sys.argv)))
