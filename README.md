@@ -7,7 +7,7 @@ FFMPEG or AVCONV is needed to download videos. You must add it to your path or t
 
 ## Usage
 
-Example command: `python yt-dl.py [video_url OR playlist_url] [audio/video] [final_path]`
+`python yt-dl.py [video_url OR playlist_url] [audio/video] [final_path]`
 
 ## Notes
 
