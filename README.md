@@ -1,4 +1,4 @@
-# youtube-downloader
+# yt-dl.py
 Download videos from YouTube
 
 ## Prerequisites
