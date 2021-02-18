@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 import youtube_dl
 import sys
 
+# Download the file, throw an error if errors OBVIOUSLY
 def download_url(video_url, ydl_opts):
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -9,6 +10,7 @@ def download_url(video_url, ydl_opts):
     except:
         print('There was an error while downloading the video: ' + video_url)
 
+# Parse the command the arguments
 def parse_args(video_url, type, final_path):
     if type == 'audio':
         # We want the audio only.
@@ -81,4 +83,4 @@ if __name__ == '__main__':
         parse_args(video_url = video_url, type = type, final_path = '')
 
     else:
-        print('Incorrect args. ' + str(len(sys.argv)))
+        print('Incorrect args. The format must be: python yt-dl.py [video_url] [audio/video] [final_path]. Number of args given: ' + str(len(sys.argv)))
