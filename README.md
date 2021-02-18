@@ -11,5 +11,5 @@ FFMPEG or AVCONV is needed to download videos. You must add it to your path or t
 
 ## Notes
 
-- `final_path` is optional, if not specified, the script will use the current directory in which yt-dl.py is stored. <br>
+- `final_path` is optional, if not specified, the script will use the current open directory. <br>
 - All videos and playlists must be public in order to download.
